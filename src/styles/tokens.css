@@ -1,0 +1,103 @@
+/* src/styles/tokens.css */
+:root, :root[data-theme="light"] {
+  /* Semantic Tokens - Text */
+  --text-primary: #181D27;
+  --text-secondary: #414651;
+  --text-tertiary: #717680;
+  --text-brand-primary: #FF8A3D;
+  --text-secondary-brand: #3D6FFF;
+  --text-error: #F14437;
+  --text-warning: #F79008;
+  --text-success: #19B26B;
+  --text-info: #006BFF;
+
+  /* Semantic Tokens - Background */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAFAFA;
+  --bg-tertiary: #F5F5F5;
+  --bg-brand-primary: #FFEEE3;
+  --bg-brand-solid: #FF8A3D;
+  --bg-brand-solid-hover: #AB571F;
+  --bg-secondary-color: #D8E2FF;
+  --bg-secondary-color-solid: #3D6FFF;
+  --bg-error-primary: #F14437;
+  --bg-warning-primary: #F79008;
+  --bg-success-primary: #19B26B;
+  --bg-info-primary: #006BFF;
+
+  /* Semantic Tokens - Border */
+  --border-primary: #E9EAEB;
+  --border-brand: #FF8A3D;
+  --border-error: #F14437;
+
+  /* Semantic Tokens - Foreground / Icon */
+  --fg-brand-primary-alt: #E67931;
+  --fg-error: #F14437;
+
+  /* Utility Gray Scale */
+  --gray-25: #FDFDFD;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #E9EAEB;
+  --gray-300: #D5D7DA;
+  --gray-400: #A3A7AE;
+  --gray-500: #717680;
+  --gray-600: #535862;
+  --gray-700: #414651;
+  --gray-800: #252B37;
+  --gray-900: #181D27;
+  
+  /* Additional UI Colors derived from JSON */
+  --color-white: #FFFFFF;
+}
+
+:root[data-theme="dark"] {
+  /* Semantic Tokens - Text */
+  --text-primary: #F7F7F7;
+  --text-secondary: #CECFD2;
+  --text-tertiary: #95979D;
+  --text-brand-primary: #FFA062;
+  --text-secondary-brand: #648CFF;
+  --text-error: #F97066;
+  --text-warning: #FDB022;
+  --text-success: #46CD89;
+  --text-info: #3389FF;
+
+  /* Semantic Tokens - Background */
+  --bg-primary: #0C0E12;
+  --bg-secondary: #14161B;
+  --bg-tertiary: #22262F;
+  --bg-brand-primary: #22262F;
+  --bg-brand-solid: #FFA062;
+  --bg-brand-solid-hover: #FF8A3D;
+  --bg-secondary-color: #3D6FFF;
+  --bg-secondary-color-solid: #648CFF;
+  --bg-error-primary: #F14437;
+  --bg-warning-primary: #F79008;
+  --bg-success-primary: #19B26B;
+  --bg-info-primary: #006BFF;
+
+  /* Semantic Tokens - Border */
+  --border-primary: #22262F;
+  --border-brand: #FFA062;
+  --border-error: #F97066;
+
+  /* Semantic Tokens - Foreground / Icon */
+  --fg-brand-primary-alt: #FF8A3D;
+  --fg-error: #F14437;
+
+  /* Utility Gray Scale */
+  --gray-25: #14161B;
+  --gray-50: #14161B;
+  --gray-100: #22262F;
+  --gray-200: #383A41;
+  --gray-300: #61656C;
+  --gray-400: #84888E;
+  --gray-500: #95979D;
+  --gray-600: #FFB687; /* Note: Confirm this from design */
+  --gray-700: #ECECED;
+  --gray-800: #F0F0F1;
+  --gray-900: #F7F7F7;
+  
+  --color-white: #000000;
+}
