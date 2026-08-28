@@ -9,8 +9,7 @@ import {
   Moon, 
   Sun,
   LogOut,
-  Menu,
-  X
+  Menu
 } from 'lucide-react';
 import './DashboardLayout.css';
 
