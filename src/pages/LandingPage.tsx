@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Activity, Moon, Sun } from 'lucide-react';
-import { Button } from '../../../components/ui/Button';
+import { Button } from '../components/ui/Button';
 import { LandingHero } from '../features/landing/components/LandingHero';
 import { LandingFeatures } from '../features/landing/components/LandingFeatures';
 import { LandingSteps } from '../features/landing/components/LandingSteps';
