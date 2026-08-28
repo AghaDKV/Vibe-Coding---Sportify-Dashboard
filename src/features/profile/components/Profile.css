@@ -1,0 +1,213 @@
+/* Profile Summary Card */
+.profile-summary-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bg-brand-solid);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.profile-email {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin: 0 0 2rem 0;
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.profile-stat-box {
+  background-color: var(--bg-tertiary);
+  padding: 0.75rem;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-stat-box .stat-val {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+.profile-stat-box .stat-lbl {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.profile-target-badge {
+  width: 100%;
+  background-color: var(--bg-brand-primary);
+  border: 1px solid var(--border-brand);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.profile-target-badge .target-lbl {
+  font-size: 0.875rem;
+  color: var(--text-brand-primary);
+  margin-bottom: 0.25rem;
+}
+.profile-target-badge .target-val {
+  font-size: 1rem;
+  color: var(--text-brand-primary);
+  font-weight: 600;
+}
+
+/* Profile Settings Card */
+.profile-settings-card {
+  padding: 2rem;
+}
+
+.settings-section-title {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 640px) {
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.settings-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-input-group label {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.settings-input-group input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  outline: none;
+}
+.settings-input-group input:focus {
+  border-color: var(--border-brand);
+}
+
+.settings-save-btn {
+  background-color: var(--bg-brand-solid);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.settings-save-btn:hover {
+  background-color: var(--bg-brand-solid-hover);
+}
+
+.settings-divider {
+  height: 1px;
+  background-color: var(--border-primary);
+  margin: 2rem 0;
+}
+
+.settings-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.toggle-btn {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+}
+.toggle-btn.on {
+  background-color: var(--bg-brand-solid);
+}
+.toggle-btn.off {
+  background-color: var(--bg-tertiary);
+}
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.toggle-btn.on .toggle-thumb {
+  transform: translateX(20px);
+}
+
+.settings-logout-btn {
+  background-color: var(--bg-error-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.settings-logout-btn:hover {
+  opacity: 0.9;
+}

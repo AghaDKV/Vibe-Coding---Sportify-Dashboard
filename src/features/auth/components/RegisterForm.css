@@ -1,0 +1,52 @@
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-form-header {
+  margin-bottom: 2rem;
+}
+
+.register-form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.register-form-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.register-form-actions {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.register-form-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.register-link {
+  color: var(--text-brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

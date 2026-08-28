@@ -1,0 +1,64 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px; /* Assuming rounded-md/lg */
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.ui-button:focus-visible {
+  box-shadow: 0 0 0 2px var(--bg-primary), 0 0 0 4px var(--bg-brand-solid);
+}
+
+.ui-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-button--full {
+  width: 100%;
+}
+
+/* Variants */
+.ui-button--primary {
+  background-color: var(--bg-brand-solid);
+  color: #FFFFFF;
+}
+
+.ui-button--primary:hover:not(:disabled) {
+  background-color: var(--bg-brand-solid-hover);
+}
+
+.ui-button--secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+}
+
+.ui-button--secondary:hover:not(:disabled) {
+  background-color: var(--bg-tertiary);
+}
+
+.ui-button--outline {
+  background-color: transparent;
+  color: var(--text-brand-primary);
+  border-color: var(--border-brand);
+}
+
+.ui-button--outline:hover:not(:disabled) {
+  background-color: var(--bg-brand-primary);
+}
+
+@media (max-width: 768px) {
+  .ui-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

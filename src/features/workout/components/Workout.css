@@ -1,0 +1,222 @@
+.workout-list-card {
+  padding: 1.5rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.workout-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.workout-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 300px;
+  transition: border-color 0.2s ease;
+}
+
+.workout-search:focus-within {
+  border-color: var(--border-brand);
+}
+
+.search-icon {
+  color: var(--text-tertiary);
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  color: var(--text-primary);
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.search-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.workout-filters {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.workout-filters::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.workout-filter-btn {
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.workout-filter-btn.active {
+  background-color: var(--bg-brand-solid);
+  color: #FFFFFF;
+  border: 1px solid var(--bg-brand-solid);
+}
+
+.workout-filter-btn.outline {
+  border: 1px solid var(--border-brand);
+  color: var(--text-brand-primary);
+}
+
+.workout-filter-btn.outline:hover {
+  background-color: var(--bg-brand-primary);
+}
+
+.workout-table-wrapper {
+  overflow-x: auto;
+}
+
+.workout-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.workout-table th {
+  color: var(--text-tertiary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid var(--border-primary);
+  white-space: nowrap;
+}
+
+.workout-table td {
+  padding: 1.25rem 1rem 1.25rem 0;
+  border-bottom: 1px solid var(--border-primary);
+  font-size: 0.875rem;
+}
+
+.workout-table tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.intensity-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.intensity-badge.ringan {
+  background-color: rgba(25, 178, 107, 0.1);
+  color: var(--text-success);
+}
+
+.intensity-badge.sedang {
+  background-color: rgba(247, 144, 8, 0.1);
+  color: var(--text-warning);
+}
+
+.intensity-badge.berat {
+  background-color: rgba(241, 68, 55, 0.1);
+  color: var(--text-error);
+}
+
+.action-col {
+  text-align: right;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--text-error);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background-color: rgba(241, 68, 55, 0.1);
+}
+
+@media (max-width: 768px) {
+  .workout-table-wrapper {
+    overflow-x: hidden;
+  }
+  
+  .workout-table {
+    min-width: 0;
+  }
+
+  .workout-table thead {
+    display: none;
+  }
+
+  .workout-table, .workout-table tbody, .workout-table tr, .workout-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .workout-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-primary);
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: var(--bg-secondary);
+  }
+
+  .workout-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-primary);
+    text-align: right;
+  }
+
+  .workout-table td:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .workout-table td::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: var(--text-tertiary);
+    text-align: left;
+    margin-right: 1rem;
+  }
+}

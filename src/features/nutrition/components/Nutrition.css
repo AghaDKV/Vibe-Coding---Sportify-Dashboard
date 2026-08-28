@@ -1,0 +1,196 @@
+/* Nutrition Cards */
+.nutrition-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .nutrition-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .nutrition-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nutrition-stat-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.orange-bg {
+  background-color: rgba(255, 138, 61, 0.1);
+}
+.text-orange {
+  color: var(--text-brand-primary);
+}
+
+.blue-bg {
+  background-color: rgba(61, 111, 255, 0.1);
+}
+.text-blue {
+  color: var(--text-secondary-brand);
+}
+
+.nutrition-stat-label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.nutrition-stat-value {
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.nutrition-stat-value .value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nutrition-stat-value .unit {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* Macro Progress */
+.macro-progress-card {
+  padding: 1.5rem;
+}
+.macro-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.macro-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.macro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.macro-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+.macro-values {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.macro-progress-bg {
+  width: 100%;
+  height: 6px;
+  background-color: var(--bg-brand-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.macro-progress-fill {
+  height: 100%;
+  background-color: var(--bg-brand-solid);
+  border-radius: 4px;
+}
+
+/* Meal Notes */
+.meal-notes-card {
+  padding: 1.5rem;
+}
+.meal-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.meal-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.meal-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meal-category-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.meal-category-cals {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+.meal-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.meal-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 12px;
+}
+.meal-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.meal-item-name {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.meal-item-macros {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+.meal-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.meal-item-cals {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.meal-delete-btn {
+  background: none;
+  border: none;
+  color: var(--text-error);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+.meal-delete-btn:hover {
+  background-color: rgba(241, 68, 55, 0.1);
+}
