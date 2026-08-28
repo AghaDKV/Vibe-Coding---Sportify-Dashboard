@@ -10,7 +10,8 @@ interface LandingHeroProps {
 export const LandingHero: React.FC<LandingHeroProps> = ({ onRegisterClick, onLoginClick }) => {
   return (
     <section className="hero-section">
-      <div className="hero-content">
+      <div className="landing-container hero-container">
+        <div className="hero-content">
         <div className="hero-badge">
           <Flame size={16} />
           <span>Setiap keringat bernilai</span>
@@ -119,6 +120,7 @@ export const LandingHero: React.FC<LandingHeroProps> = ({ onRegisterClick, onLog
               <div className="mockup-card-label">Durasi</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

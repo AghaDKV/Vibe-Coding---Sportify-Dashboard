@@ -83,10 +83,14 @@
 
 /* Hero Section */
 .hero-section {
+  padding: 4rem 0;
+}
+
+.hero-container {
   display: flex;
   align-items: center;
-  padding: 4rem 0;
   gap: 2rem;
+  width: 100%;
 }
 
 .hero-content {
@@ -654,9 +658,12 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .hero-section {
+  .hero-container {
     flex-direction: column;
     text-align: center;
+  }
+  
+  .hero-section {
     padding: 4rem 0;
   }
   
